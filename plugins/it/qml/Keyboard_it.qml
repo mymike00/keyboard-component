@@ -43,6 +43,12 @@ KeyPad {
             CharKey { label: "o"; shifted: "O"; extended: ["9", "ò","º","ó","ö","ô","õ","ø"]; extendedShifted: ["9", "Ò","º","Ó","Ö","Ô","Õ","Ø"] }
             CharKey { label: "p"; shifted: "P"; extended: ["0"]; extendedShifted: ["0"]; rightSide: true; }
         }
+        Item {
+            anchors.left: parent.left
+            anchors.right: parent.right
+            height: panel.keyHeight + units.gu(UI.row_margin);
+
+        }
 
         Row {
             anchors.horizontalCenter: parent.horizontalCenter;
